@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 public class Login {
     @Test
     public void logintest() {
-        String responsee =  RestAssured
+        String resultRest =  RestAssured
                 .given()
                 .contentType(ContentType.JSON)
                 .body("{\n" +
@@ -18,6 +18,6 @@ public class Login {
                 .all()
                 .extract()
                 .asString();
-        System.out.println(responsee);
+        System.out.println(resultRest);
     }
 }
