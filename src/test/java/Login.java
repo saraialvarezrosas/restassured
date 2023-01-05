@@ -1,6 +1,7 @@
-import org.junit.Test;
+//import org.junit.Test;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
+import org.junit.jupiter.api.Test;
 
 public class Login {
     @Test
